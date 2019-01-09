@@ -1,22 +1,29 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import store from "./store";
-import vueCustomElement from "vue-custom-element";
 import "document-register-element";
+import filters from "./filters";
+import plugins from "./plugins";
+import components from "./components";
 
 Vue.config.devtools = true;
 Vue.use(Vuex);
-Vue.use(vueCustomElement);
 
 const vuexStore = new Vuex.Store(store);
 
-const widgets = {
-  "vue-example": "VueExample.vue"
-};
+/* Register Filters */
+Object.entries(filters).forEach(filter => {
+  Vue.use(...filter);
+});
 
-Object.entries(widgets).forEach(widget => {
-  const [name, componentPath] = widget;
-  const component = require(`./components/${componentPath}`).default;
-  component.store = vuexStore;
-  Vue.customElement(name, component);
+/* Register Plugins */
+plugins.forEach(plugin => {
+  Vue.use(plugin);
+});
+
+/* Register Components */
+Object.entries(components).forEach(component => {
+  const [name, module] = component;
+  module.store = vuexStore;
+  Vue.customElement(name, module);
 });

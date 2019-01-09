@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "document-register-element": "^1.13.1",
+    "portal-vue": "^1.5.1",
     "vue": "^2.5.21",
     "vue-custom-element": "^3.2.6",
     "vuex": "^3.0.1"

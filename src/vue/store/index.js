@@ -1,7 +1,7 @@
-import example from "./modules/example";
+import miniCart from "./modules/mini-cart";
 
 export default {
   modules: {
-    example
+    miniCart
   }
 };

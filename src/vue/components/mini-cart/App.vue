@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1>Vue Component</h1>
-    <p>Shopify Prop: {{ externalProp }}</p>
-    <p>Store Value: {{ value }}</p>
+    <button>Vue Mini Cart</button>
   </div>
 </template>
 
