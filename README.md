@@ -1,13 +1,6 @@
-# Shopify Themekit Vue
+# Shopify Vue Mini Cart
 
-Barebones repository for Shopify/Vue theme development based on [shopify/skeleton-theme](https://github.com/shopify/skeleton-theme)
-
-## Features
-
-- Nested folder structures
-- PostCSS/ES6 processing
-- Live reload w/ BrowserSync
-- Full Vue/Vuex support
+Drop in Vue mini-cart component for Shopify
 
 ## Setup
 
