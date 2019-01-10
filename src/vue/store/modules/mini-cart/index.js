@@ -1,13 +1,12 @@
-const state = {
-  value: "Hello from Vuex!"
-};
-
-const getters = {
-  value: state => state.value
-};
+import state from "./state";
+import getters from "./getters";
+import mutations from "./mutations";
+import actions from "./actions";
 
 export default {
   namespaced: true,
   state,
-  getters
+  getters,
+  mutations,
+  actions
 };

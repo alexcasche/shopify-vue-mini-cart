@@ -10,6 +10,7 @@ npm-debug.log
 .env
 .env.*
 config.yml
+tasks.txt
 
 
 # Compiled source #

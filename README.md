@@ -1,13 +1,13 @@
 # Shopify Vue Mini Cart
 
-Drop in Vue mini-cart component for Shopify
+Vue shopping cart component for Shopify
 
 ## Setup
 
 To get started clone the repository.
 
 ```
-git clone https://github.com/alexcasche/shopify-themekit-vue.git
+git clone https://github.com/alexcasche/shopify-mini-cart.git
 ```
 
 Run zip command and create new theme in Shopify from theme.zip.

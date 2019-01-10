@@ -1,21 +1,21 @@
-<template>
-  <div>
-    <button>Vue Mini Cart</button>
+<template lang="html">
+  <div class="c-miniCart">
+    <Trigger />
+    <Overlay />
+    <Drawer />
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import Trigger from "./Trigger.vue";
+import Overlay from "./Overlay.vue";
+import Drawer from "./Drawer.vue";
 
 export default {
-  props: {
-    externalProp: {
-      type: String,
-      default: ""
-    }
-  },
-  computed: {
-    ...mapGetters("example", ["value"])
+  components: {
+    Trigger,
+    Overlay,
+    Drawer
   }
 };
 </script>
